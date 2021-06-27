@@ -2,11 +2,12 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init()
 
+TITLE_PROGRAM = "====== А, нумо, створимо дзеркальну анаграму рядка "
+
 lenDisplay = 85
 line = '"...і що сал ?о лас ощ і"'
 print()
-line_to_print = (Fore.GREEN + "====== А, нумо, створимо \
-дзеркальну анаграму рядка " + Style.RESET_ALL)
+line_to_print = (Fore.GREEN + TITLE_PROGRAM + Style.RESET_ALL)
 line_to_print += F"{line}" + Fore.GREEN + '! =======' + Style.RESET_ALL
 print(line_to_print)
 

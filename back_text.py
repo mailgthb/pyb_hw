@@ -5,7 +5,8 @@ colorama.init()
 lenDisplay = 85
 line = '"...і що сал ?о лас ощ і"'
 print()
-line_to_print = (Fore.GREEN + "====== А, нумо, створимо дзеркальну анаграму рядка " + Style.RESET_ALL)
+line_to_print = (Fore.GREEN + "====== А, нумо, створимо \
+дзеркальну анаграму рядка " + Style.RESET_ALL)
 line_to_print += F"{line}" + Fore.GREEN + '! =======' + Style.RESET_ALL
 print(line_to_print)
 
@@ -34,7 +35,7 @@ for elem in reversed(line):
 print()      
 print()
 print(Fore.CYAN + "Третій спосіб".center(lenDisplay, '-'))
-print(Fore.BLUE + "text = ''.join(reversed(line) ", end = Fore.CYAN + ' :     ')
+print(Fore.BLUE + "text = ''.join(reversed(line) ", end = Fore.CYAN + ' : ')
 print(Style.RESET_ALL, end = '')
 # Сам код
 text = ''.join(reversed(line))

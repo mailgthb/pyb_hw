@@ -4,7 +4,7 @@ colorama.init()
 ABETKA = "абвгґдеєжзиіїйклмнопрстуфхцчшщюяь"
 
 line = input("Введіть текстовий рядок (без пробілів, "
-             "розділових знаків, лише букви української мови): ").lower()
+             "розділових знаків, інших символів, лише букви української мови): ").lower()
 longest_ordered_substring = ''
 num_pos = -1
 longest_ordered_substring_result = ''
@@ -12,9 +12,9 @@ longest_ordered_substring_result = ''
 for letter in line:
     
     
-    if letter == ' ':
-        print("Рядок повинен бути без пробілів!")
-        break
+##    if letter == ' ':
+##        print("Рядок повинен бути без пробілів!")
+##        break
     
     num_pos_prev = num_pos
     

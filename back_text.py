@@ -13,7 +13,7 @@ print(line_to_print)
 
 # Друк коду першого способу
 print('\n')
-print(Fore.CYAN + "Перший спосіб".center(LEN_DISPLAY, '-') + Fore.RESET)
+print(Fore.CYAN + "Перший спосіб".center(LEN_DISPLAY,'-') + Fore.RESET)
 print(Fore.BLUE+"line[::-1]", end=Fore.CYAN+'  :     ')
 print(Fore.RESET+"   ", end='')
 # Сам код

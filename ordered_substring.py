@@ -3,30 +3,30 @@ from colorama import Fore, Back, Style
 colorama.init()
 ABETKA = "абвгґдеєжзиіїйклмнопрстуфхцчшщюяь"
 
-# Дивлюсь я на небо і думку гадаю
-line = input("Введіть текстовий рядок: ").lower()
+line = input("Введіть текстовий рядок (без пробілів, "
+             "розділових знаків, лише букви української мови): ").lower()
 longest_ordered_substring = ''
 num_pos = -1
-list_str = []
+longest_ordered_substring_result = ''
 
 for letter in line:
-    print(F"letter = {letter}")
+    
     
     if letter == ' ':
-        #longest_ordered_substring += ' '
-        list_str.append(longest_ordered_substring)
-        longest_ordered_substring = ''
-        continue
+        print("Рядок повинен бути без пробілів!")
+        break
     
     num_pos_prev = num_pos
-    print(F"num_pos_prev = num_pos = {num_pos}")
+    
     
     num_pos = ABETKA.index(letter)
     if num_pos >= num_pos_prev:
         longest_ordered_substring += letter
     else:
-        list_str.append(longest_ordered_substring)
+        if len(longest_ordered_substring) > len(longest_ordered_substring_result):
+            longest_ordered_substring_result = longest_ordered_substring
+        
         longest_ordered_substring = letter
-print(list_str)  
+print(longest_ordered_substring_result)  
     
     

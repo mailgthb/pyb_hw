@@ -4,8 +4,12 @@
 и возвращает один из вариантов в порядке возрастания значимости:
 - X, если Y < X;
 - Z, если Y > Z;
-- Y, при ином раскладе."""
-# програма не дороблена
+- Y, при ином раскладе.
+
+Example of run program:
+python xyz.py 3 2 1
+>>1
+"""
 
 import sys
 
@@ -13,7 +17,4 @@ if __name__ == "__main__":
     X = int(sys.argv[1])
     Y = int(sys.argv[2])
     Z = int(sys.argv[3])
-print(max(X, Y))    
-t = (max(X, Y))
-
-print(X, Y, Z)
+print(min(max(X, Y), Z))    

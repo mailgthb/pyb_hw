@@ -1,3 +1,3 @@
-l = "This is it"
-for i in enumerate(l):
-  print (i)
+l = "wow"
+for i in range(10000):
+  print (l, end="")

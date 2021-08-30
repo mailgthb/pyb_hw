@@ -12,7 +12,7 @@
 
 """
 
-A = "44"
+A = 4
 B = 44
 if type(A)==str or type(B)==str:
     print("получена строка")

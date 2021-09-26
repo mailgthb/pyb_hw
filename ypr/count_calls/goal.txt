@@ -29,8 +29,6 @@ while n<len(lst_tel0):
 			break
 	n += 1
 
-
-
 #for n, elm in enumerate(lst_tel0):
 
 	

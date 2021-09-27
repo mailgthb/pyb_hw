@@ -19,10 +19,26 @@ def compare_kstel_binotel():
 		dict_ks_tel_rep[elm] = rep_dict.get(elm, 0)
 	return dict_ks_tel_rep
 
-dict = compare_kstel_binotel()
-for tel, rep in dict.items():
-	print(tel, rep)
+def compare_kstel_binotel_with_rep():
+	lst_input_tel = input_tel.line.split('\n')
+	rep_dict = repeat_dict.repeat_dict(lst_input_tel)
 
+	lst_ks_tel = ks_tel.line.split('\n')
+	lst_ks_tel_rep = []
+	for i, elm in enumerate(lst_ks_tel):
+		for elm2 in rep_dict:
+			lst_ks_tel_rep[i] = rep_dict.get(elm, 0)
+	return lst_ks_tel_rep
+
+
+dict = compare_kstel_binotel()
+
+# for tel, rep in dict.items():
+# 	print(tel, rep)
+
+lst = compare_kstel_binotel_with_rep()
+for i, rep in enumerate(lst):
+ 	print(i, rep)
 
 	
 	

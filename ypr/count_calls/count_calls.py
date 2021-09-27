@@ -1,8 +1,7 @@
 import repeat_dict
 import input_tel
 import ks_tel
-import asking_for_info
-
+import line_of_tel_that_asked
 
 
 lst_tel = (442362910, 442362910, 442577227, 443334023, 443334023,\
@@ -38,7 +37,7 @@ def compare_kstel_binotel_with_rep():
 # 	num_asking4info_dict = repeat_dict.repeat_dict(lst_asking_for_info)
 
 def compare_kstel_vs_asking_for_info():
-	lst_asking_for_info = asking_for_info.line.split('\n')
+	lst_asking_for_info = line_of_tel_that_asked.line.split("\n")
 	#print(lst_asking_for_info)
 	num_asking4info_dict = repeat_dict.repeat_dict(lst_asking_for_info)
 	lst_ks_tel = ks_tel.line.split('\n')
@@ -47,7 +46,7 @@ def compare_kstel_vs_asking_for_info():
 		#for elm2 in rep_dict:
 		lst_ks_tel_rep_ask.append(num_asking4info_dict.get(elm, 0))
 	return lst_ks_tel_rep_ask
-
+   
 	
 
 
